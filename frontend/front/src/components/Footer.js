@@ -4,7 +4,7 @@ import {NavBar, Container, Col} from 'react-bootstrap';
 
 class Footer extends React.Component {
     render() {
-        let fullYEar = new Date () .getFullYear ();
+        let fullYear = new Date () .getFullYear ();
 
         return (
             <NavBar fixed="bottom" bg="dark" variant="dark">
