@@ -21,10 +21,19 @@ function App() {
      <Container>
        <Row>
          <Col lg={12} style={marginTop}>
-           <Crystals/>
-           <Jewelry/>
-           <Pendulums/>
-           <ItemUpload/>
+           <Switch>
+            <Route path="" exact component= {Welcome}/>
+            <Route path="" exact component= {Crystals}/>
+            <Route path="" exact component= {Jewelry}/>
+            <Route path="" exact component= {Pendulums}/>
+            <Route path="" exact component= {ItemUpload}/>
+           
+           </Switch>
+           </>
+           </>
+           </>
+           </>
+           </>
          </Col>
        
 
