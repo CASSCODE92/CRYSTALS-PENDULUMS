@@ -4,12 +4,11 @@ import './App.css';
 import {Container, Row, Col} from 'react-bootstrap';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import Mission from './components/Welcome';
-import Crystals 
-import Mission from './components/Welcome';
-import Mission from './components/Welcome';
-import Mission from './components/Welcome';
+import Welcome from './components/Welcome';
+import ItemUpload from './components/ItemUpload';
+import Crystals from './components/Crystals';
 import Jewelry from './components/Jewelry';
+import Pendulums from './components/Pendulums';
 
 function App() {
   const marginTop = {
