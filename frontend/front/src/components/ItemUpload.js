@@ -1,14 +1,20 @@
 import React, {Component} from 'react';
 
 import {Card} from 'react-bootstrap';
+import {Form} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 
 export default class Item extends Component {
 
     render () {
         return (
+            <div>
         <Card className= {"border border-dark bg-dark text-white"}>
         <Card.Header>ITEM UPLOAD</Card.Header>
-        <Card.Body>
+       
+            </Card>
+        
+
         <Form>
 
         <Form.Group controlId="crystalForm">
@@ -55,7 +61,7 @@ export default class Item extends Component {
         <option>Black</option>
         <option>Rainbow</option>
     </Form.Control>
-        
+        </Form.Group>
 
         <Form.Group controlId="crystalSize">
     <Form.Label>Size</Form.Label>
@@ -95,6 +101,10 @@ export default class Item extends Component {
         </Form.Control>
         </Form.Group>
 
+        
+
+        
+
 
 
       
@@ -103,10 +113,11 @@ export default class Item extends Component {
   <Button variant="primary" type="submit">
     Submit
   </Button>
-</Form>
 
-        </Card.Body>
-        </Card>
+  </Form>
+
+</div>
+        
 
         );
     }

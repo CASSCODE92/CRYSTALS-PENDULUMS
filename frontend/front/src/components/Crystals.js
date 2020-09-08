@@ -6,6 +6,7 @@ export default class Crystals extends Component {
 
     render () {
         return (
+            <div>
             <Card className= {"border border-dark bg-dark text-white"}>
                <Card.Header>CRYSTALS</Card.Header>
                <Card.Body>
@@ -35,6 +36,8 @@ export default class Crystals extends Component {
                    </Table>
                </Card.Body>
             </Card>
+
+    </div>        
 
         );
     }

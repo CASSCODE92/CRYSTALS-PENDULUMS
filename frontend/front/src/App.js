@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import {Footer} from 'react-bootstrap';
 
 import {Container, Row, Col} from 'react-bootstrap';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -15,24 +16,21 @@ function App() {
     marginTop:"20px"
   };
   return (
+    <div>
     <Router>
      <NavBar/>
      <Container>
        <Row>
          <Col lg={12} style={marginTop}>
            <Switch>
-            <Route path="" exact component= {Welcome}/>
-            <Route path="" exact component= {Crystals}/>
-            <Route path="" exact component= {Jewelry}/>
-            <Route path="" exact component= {Pendulums}/>
-            <Route path="" exact component= {ItemUpload}/>
+            <Route path="/welcome" exact component= {Welcome}/>
+            <Route path="/crystals" exact component= {Crystals}/>
+            <Route path="/jewelry" exact component= {Jewelry}/>
+            <Route path="/pendulums" exact component= {Pendulums}/>
+            <Route path="/itemupload" exact component= {ItemUpload}/>
            
            </Switch>
-           </>
-           </>
-           </>
-           </>
-           </>
+           
          </Col>
        
 
@@ -41,6 +39,7 @@ function App() {
      </Container>
      <Footer/>
     </Router>
+    </div>
   );
 }
 

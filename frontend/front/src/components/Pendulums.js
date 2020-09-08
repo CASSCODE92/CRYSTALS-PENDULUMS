@@ -6,6 +6,7 @@ export default class Pendulums extends Component {
 
     render () {
         return (
+            <div>
             <Card className= {"border border-dark bg-dark text-white"}>
                <Card.Header>PENDULUMS</Card.Header>
                <Card.Body>
@@ -38,6 +39,8 @@ export default class Pendulums extends Component {
                    </Table>
                </Card.Body>
             </Card>
+
+        </div>
 
         );
     }

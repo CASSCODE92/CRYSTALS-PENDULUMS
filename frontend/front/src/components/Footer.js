@@ -4,9 +4,11 @@ import {NavBar, Container, Col} from 'react-bootstrap';
 
 class Footer extends React.Component {
     render() {
+        
         let fullYear = new Date () .getFullYear ();
 
         return (
+            <div>
             <NavBar fixed="bottom" bg="dark" variant="dark">
                 <Container>
                     <Col lg={12} className="text-center text-muted">
@@ -14,6 +16,8 @@ class Footer extends React.Component {
                         </Col>
                 </Container>
             </NavBar>
+
+            </div>
         )
     }
 }

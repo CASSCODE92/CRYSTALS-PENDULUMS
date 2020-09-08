@@ -6,6 +6,7 @@ export default class Jewelry extends Component {
 
     render () {
         return (
+            <div>
             <Card className= {"border border-dark bg-dark text-white"}>
                <Card.Header>JEWELRY</Card.Header>
                <Card.Body>
@@ -37,6 +38,8 @@ export default class Jewelry extends Component {
                    </Table>
                </Card.Body>
             </Card>
+
+    </div>
 
         );
     }

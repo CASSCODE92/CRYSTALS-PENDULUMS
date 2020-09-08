@@ -2,9 +2,10 @@ import React from'react';
 
 import {Jumbotron} from 'react-bootstrap';
 
-class Mission extends React.Component {
+class Welcome extends React.Component {
     render() {
         return (
+            <div>
             <Jumbotron className="bg-dark text-white">
   <h1>MISSION STATEMENT</h1>
   <p>
@@ -15,6 +16,8 @@ Our goal is to make tools for internal  healing and direction more accessible to
   </p>
   
 </Jumbotron>
+
+</div>
 
         );
     }
