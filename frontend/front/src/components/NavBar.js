@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 
 
-import{NavBar} from 'react-bootstrap' ;
+import{Navbar, Nav} from 'react-bootstrap' ;
 import {Link} from 'react-router-dom';
 
-export default class NavBar extends Component {
+
+class NavBar extends Component {
   render () {
     return (
         <div>

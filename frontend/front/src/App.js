@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Footer} from 'react-bootstrap';
+// import {Footer} from 'react-bootstrap/Footer';
 
 import {Container, Row, Col} from 'react-bootstrap';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -10,6 +10,7 @@ import ItemUpload from './components/ItemUpload';
 import Crystals from './components/Crystals';
 import Jewelry from './components/Jewelry';
 import Pendulums from './components/Pendulums';
+// import Year from './components/Year';
 
 function App() {
   const marginTop = {
@@ -28,6 +29,8 @@ function App() {
             <Route path="/jewelry" exact component= {Jewelry}/>
             <Route path="/pendulums" exact component= {Pendulums}/>
             <Route path="/itemupload" exact component= {ItemUpload}/>
+            {/* <Route path="/itemupload" exact component= {Year}/> */}
+            
            
            </Switch>
            
@@ -37,7 +40,7 @@ function App() {
 
        </Row>
      </Container>
-     <Footer/>
+     {/* <Footer/> */}
     </Router>
     </div>
   );
