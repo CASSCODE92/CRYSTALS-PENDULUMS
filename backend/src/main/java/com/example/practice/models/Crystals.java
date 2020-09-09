@@ -12,9 +12,8 @@ public class Crystals {
     private Long id;
 
 
-
     @Column
-    private String priceRange;
+    private String price;
 
 //            add as many columns as necessary
 
@@ -25,9 +24,7 @@ public class Crystals {
     private Long size;
 
     @Column
-    private Long type;
-
-
+    private Long crystalType;
 
 
     public Crystals() {
@@ -41,12 +38,12 @@ public class Crystals {
         this.id = id;
     }
 
-    public String getPriceRange() {
-        return priceRange;
+    public String getPrice() {
+        return price;
     }
 
-    public void setPriceRange(String priceRange) {
-        this.priceRange = priceRange;
+    public void setPrice(String price) {
+        this.price = price;
     }
 
     public String getColor() {
@@ -65,11 +62,11 @@ public class Crystals {
         this.size = size;
     }
 
-    public Long getType() {
-        return type;
+    public Long getCrystalType() {
+        return crystalType;
     }
 
-    public void setType(Long type) {
-        this.type = type;
+    public void setCrystalType(Long crystalType) {
+        this.crystalType = crystalType;
     }
 }

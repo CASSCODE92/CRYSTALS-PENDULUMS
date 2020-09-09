@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class CrystalController {
 
     @Autowired
-    private CrystalsService crystalsService;
+    CrystalsService crystalsService;
 
     @GetMapping("/list")
     public Iterable<Crystals> listCrystals() {
@@ -24,7 +24,7 @@ public class CrystalController {
 public Crystals createCrystalsPost(@RequestBody Crystals newCrystals) {
     return crystalsService.createCrystalsPost(newCrystals);
 }
-@DeleteMapping("/{crystalId}")
+@DeleteMapping("/{crystal/Id}")
     public HttpStatus deleteCrystalsById(@PathVariable Long crystalsId) {
       return crystalsService.deleteById(crystalsId);
 
