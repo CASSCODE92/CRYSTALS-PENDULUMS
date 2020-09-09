@@ -1,15 +1,21 @@
 import React, {Component} from 'react';
 
 import {Card, Table} from 'react-bootstrap';
+import opal from '../Assets/crystal-images/opal.jpg'
 
 export default class Pendulums extends Component {
 
     render () {
         return (
             <div>
-            <Card className= {"border border-dark bg-dark text-white"}>
+                <img className="opal" src={opal}></img>
+            <Card className= "model-three">
+                <div className= "table-three">
+                    <div>
                <Card.Header>PENDULUMS</Card.Header>
-               <Card.Body>
+               </div>
+               {/* <Card.Body> */}
+               <div><br/>
                    <Table bordered hover striped variant="dark">
                    <thead>
     <tr>
@@ -37,7 +43,9 @@ export default class Pendulums extends Component {
   </tbody>
 
                    </Table>
-               </Card.Body>
+                   </div>
+                   </div>
+            {/* //    </Card.Body> */}
             </Card>
 
         </div>

@@ -1,15 +1,23 @@
 import React, {Component} from 'react';
 
 import {Card, Table} from 'react-bootstrap';
+import obsidian from '../Assets/crystal-images/obsidian.jpg'
+
 
 export default class Jewelry extends Component {
 
     render () {
         return (
             <div>
-            <Card className= {"border border-dark bg-dark text-white"}>
+                <img className="obsidian" src={obsidian}></img>
+               
+            <Card className= "model-two">
+                <div className="table-two">
+                    <div>
                <Card.Header>JEWELRY</Card.Header>
-               <Card.Body>
+               </div>
+               {/* <Card.Body> */}
+               <div><br/>
                    <Table bordered hover striped variant="dark">
                    <thead>
     <tr>
@@ -36,7 +44,9 @@ export default class Jewelry extends Component {
   </tbody>
 
                    </Table>
-               </Card.Body>
+                   </div>
+                   </div>
+               {/* </Card.Body> */}
             </Card>
 
     </div>

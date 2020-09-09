@@ -1,16 +1,26 @@
 import React, {Component} from 'react';
 
 import {Card, Table} from 'react-bootstrap';
+import amethyst from '../Assets/crystal-images/amethyst.jpg'
 
 export default class Crystals extends Component {
 
     render () {
         return (
+
+            
             <div>
-            <Card className= {"border border-dark bg-dark text-white"}>
+                <img className="amethyst" src={amethyst}></img>
+            
+            <Card className= "model-one">
+                <div className="table-one">
+               <div>
                <Card.Header>CRYSTALS</Card.Header>
-               <Card.Body>
+               </div>
+               {/* <Card.Body> */}
+                   <div><br/>
                    <Table bordered hover striped variant="dark">
+                   
                    <thead>
     <tr>
       <th>#</th>
@@ -34,7 +44,9 @@ export default class Crystals extends Component {
   </tbody>
 
                    </Table>
-               </Card.Body>
+                   </div>
+                   </div> 
+               {/* </Card.Body> */}
             </Card>
 
     </div>        

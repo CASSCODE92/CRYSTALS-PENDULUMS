@@ -8,8 +8,8 @@ export default class Item extends Component {
 
     render () {
         return (
-            <div>
-        <Card className= {"border border-dark bg-dark text-white"}>
+            <div className="selects">
+        <Card>
         <Card.Header>ITEM UPLOAD</Card.Header>
        
             </Card>

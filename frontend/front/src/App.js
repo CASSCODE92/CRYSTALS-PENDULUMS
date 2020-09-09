@@ -3,8 +3,8 @@ import './App.css';
 // import {Footer} from 'react-bootstrap/Footer';
 
 import {Container, Row, Col} from 'react-bootstrap';
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import NavBar from './components/NavBar';
+import {BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+
 import Welcome from './components/Welcome';
 import ItemUpload from './components/ItemUpload';
 import Crystals from './components/Crystals';
@@ -13,36 +13,55 @@ import Pendulums from './components/Pendulums';
 // import Year from './components/Year';
 
 function App() {
-  const marginTop = {
-    marginTop:"20px"
-  };
+ 
+ 
   return (
-    <div>
     <Router>
-     <NavBar/>
-     <Container>
-       <Row>
-         <Col lg={12} style={marginTop}>
-           <Switch>
-            <Route path="/welcome" exact component= {Welcome}/>
-            <Route path="/crystals" exact component= {Crystals}/>
-            <Route path="/jewelry" exact component= {Jewelry}/>
-            <Route path="/pendulums" exact component= {Pendulums}/>
-            <Route path="/itemupload" exact component= {ItemUpload}/>
-            {/* <Route path="/itemupload" exact component= {Year}/> */}
+            <div className= "pages">
+      <nav className="nav-bar">
+          <h1 className= "title">CRYSTALS & PENDULUMS</h1>
+          {/* <img src="%PUBLIC_URL%/favicon.ico" width="25" height="25" alt="brand"/> */}
+          <ul className="across">
+        
+        
+            <li><Link to="/Welcome">WELCOME</Link></li>
+            <li><Link to="/Crystals">CRYSTALS</Link></li>
+            <li><Link to="/Jewelry">JEWELRY</Link></li> 
+            <li><Link to="/Pendulums">PENDULUMS</Link></li> 
+            <li><Link to="/ItemUpload">ITEM UPLOAD</Link></li>
+            </ul>    
             
-           
-           </Switch>
-           
-         </Col>
-       
+          </nav>
+        
+          <Switch>
+            <Route path='/Welcome'><br/><br/>
+            <Welcome />
+            </Route>
+            <Route path='/Crystals'><br/><br/>
+                <Crystals />
+                </Route>
+            <Route path='/Jewelry'><br/><br/>
+                <Jewelry />
+                </Route>
+            <Route path='/Pendulums'><br/><br/>
+                <Pendulums />
+                </Route>
+            <Route path='/ItemUpload'><br/><br/>
+                <ItemUpload />
+                
+            </Route>
+            </Switch>
+
+            
 
 
-       </Row>
-     </Container>
-     {/* <Footer/> */}
-    </Router>
-    </div>
+
+
+        </div>
+
+        </Router>
+
+   
   );
 }
 
